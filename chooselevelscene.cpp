@@ -79,7 +79,7 @@ void ChooseLevelScene::prepare()
         label->setText(QString::number(i+1));
         label->move(i%4*60+40, i/4*60+150);
         label->setAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
-//        connect(label,&QLabel::) // label没有鼠标点击相关的信号，不能用信号-串-信号的方式。
+        // connect(label,&QLabel::) // label没有鼠标点击相关的信号，不能用信号-串-信号的方式。
         label->setAttribute(Qt::WA_TransparentForMouseEvents); // 属性设置成鼠标穿透，这样label不挡着按钮了
 
     }

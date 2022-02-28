@@ -48,7 +48,7 @@ void MainScene::prepare()
         });
     });
 
-    //接受观察界面信号；
+    //接受关卡选择界面信号；
     connect(chooseScene,&ChooseLevelScene::chooseScenceBack,this,[=](){
         this->setGeometry(chooseScene->geometry()); // 返回mainscene位置，和chooseScene位置相同
         chooseScene->hide();
